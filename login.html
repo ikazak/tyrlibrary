@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img class="bg" id="bgbody" src="image/hosbg1.jpg" height="100%" width="100%">
+
+
+<div>
+	<div align="center">
+		<div class="tab">
+			<div class="tit">
+			</div>
+			<table>
+				<tr>
+					<td><label class="lab"><b>Email :</b></label></td>
+					<td><input class="input" type="text" name="" placeholder="Enter Email"></td>
+				</tr>
+				<tr>
+					<td><label class="lab"><b>Password :</b></label></td>
+					<td><input class="input" type="password" name="" placeholder="Enter password"></td>
+				</tr>
+				<tr>
+					<td class="buttd" colspan="2" align="right"><a href="home.html"><button class="but"><b>Login</b></button></a></td>
+				</tr>
+				<tr>
+					<td align="center" class="hrlab" colspan="2"><span class="lab"><b>Don't have an account?</b><a class="lab" href="signup.html" class="hr" > signup</a></span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<footer>
+	
+</footer>
+
+
+</body>
+</html>
+
+<style type="text/css">
+	.lab{
+		font-size: 23px;
+	}
+	.marq{
+		padding-top: 20px;
+		background-color: pink;
+		height: 50px;
+		width: 200px;
+		font-size: 20px;
+		color: brown;
+		font-family: cursive;
+		border-radius: 20px;
+	}
+	.cent{
+		margin-top: 50px;
+	}
+	.hr{
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.tit{
+		padding-bottom: 15px;
+	}
+	.hr:hover{
+		color: blue;
+	}
+	.hrlab{
+		cursor: default;
+		font-size: 20px;
+		height: 70px;
+	}
+	.label{
+		margin-left: 870px;
+		font-size: 50px;
+	}
+	.log{
+		padding-top: 170px;
+	}
+	.input{
+		height: 45px;
+		width: 220px;
+		font-size: 23px;
+		border-radius: 15px;
+		border: solid;
+
+	}
+	.bg{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+	.tab{
+		margin-top: 150px;
+		background-color: rgb(255, 255, 255, 0.5);
+		height: 300px;
+		width: 450px;
+		padding-top: 80px;
+		border-radius: 15px;
+	}
+	.buttd{
+		padding: 10px;
+	}
+	.but{
+		cursor: pointer;
+		height: 40px;
+		width: 100px;
+		font-size: 20px;
+		border-radius: 10px;
+
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	.but:hover{
+		font-size: 18px;
+	}
+
+
+	
+
+
+	input, .but{border-radius: 5px; border:solid 1px #dedede; outline: none;}
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+		carusil();
+	}
+	var count = 1;
+	function carusil(){
+		if(count==1){
+			document.getElementById('bgbody').src = "image/hosbg1.jpg";
+		}
+		if(count ==2){
+			document.getElementById('bgbody').src = "image/hosbg2.jpg";
+		}
+		if(count ==3){
+			document.getElementById('bgbody').src = "image/hosbg3.jpg";
+			count=0;
+		}
+		count+=1;
+		setTimeout(carusil,3000);
+	}
+
+</script>

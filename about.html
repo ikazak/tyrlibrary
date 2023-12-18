@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+    <div>
+        <img class="title" src="image/title.png" height="100" width="100">
+        <div class="text-nav">
+            <a href="home.html"><b>HOME</b></a>
+            <a href="about.html"><b>ABOUT</b></a>
+            <a href="policies.html"><b>POLICIES</b></a>
+            <a href="request.html"><b>REQUEST</b></a>
+            <a href="search.html"><b>SEARCH</b></a>
+            <a href="services.html"><b>SERVICES</b></a>
+            <a href="faq.html"><b>FAQ</b></a>
+            <a href="login.html"><b>LOG OUT</b></a>
+        </div>
+    </div>
+    </nav>
+
+    <main>
+        <div>
+            <img class="pics" id="bgbody" src="image/bg.jpg" height="400" width="100%">
+        </div>
+        <div align="center" class="top">
+            <span><b>Certainly! Libraries are essential institutions that provide access to a wide range of resources, such as books, periodicals, digital materials, and more. Here are some key points about libraries:</b></span>
+        </div>
+        <table align="center">
+            <tr>
+                <td><span><b>1. Types of Libraries: There are different types of libraries, including public libraries, academic libraries (found in educational institutions), research libraries, and special libraries (focused on specific topics or industries).</b></span></td>
+                <td><span><b>2. Services: Libraries offer various services, including lending books, e-books, and other materials; research assistance; computer access; educational programs; and more.</b></span></td>
+                <td><span><b>3. Cataloging: Libraries use cataloging systems, like the Dewey Decimal System or Library of Congress Classification, to organize and locate materials.</b></span></td>
+                <td><span><b>4. Digital Resources: In the digital age, libraries have expanded their offerings to include e-books, online databases, and digital archives.</b></span></td>
+                <td><span><b>5. Community Centers: Public libraries often serve as community hubs, hosting events, workshops, and providing spaces for studying or meetings.</b></span></td>
+            </tr>
+            <tr>
+                <td><span><b>6. Education and Literacy: Libraries play a vital role in promoting literacy and lifelong learning by offering educational resources and programs.</b></span></td>
+                <td><span><b>7. Historical Preservation: Many libraries house rare and historical documents, making them important for preserving cultural heritage.</b></span></td>
+                <td><span><b>8. Access to Information: Libraries aim to provide equal access to information for all, regardless of socio-economic background.</b></span></td>
+                <td><span><b>9. Librarians: Trained librarians assist patrons in finding information, conducting research, and navigating library resources.</b></span></td>
+                <td><span><b>10. Challenges: Libraries face challenges in adapting to digital technologies, funding issues, and evolving community needs.</b></span></td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+</html>
+
+<style>
+    .pics{
+        margin-top: 118px;
+    }
+    nav{
+        margin-top: -10px;
+        width: 100%;
+        position: fixed;
+    }
+    table{
+        margin-top: 50px;
+        width: 1100px;
+        font-size: 20px;
+    }
+    .top{
+        margin-top: 50px;
+        margin-left: 200px;
+        width: 900px;
+        font-size: 30px;
+        color: green;
+        
+    }
+    .title{
+        position: absolute;
+        width: 500px;
+    }
+    .text-nav{
+        
+        background-color: rgb(23, 221, 23);
+        padding: 50px 0px 50px 500px;
+    }
+    a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    a:hover{
+        color: white;
+    }
+
+
+</style>
+
+<script type="text/javascript">
+	window.onload = function(){
+		carusil();
+	}
+	var count = 1;
+	function carusil(){
+		if(count==1){
+			document.getElementById('bgbody').src = "image/bg.jpg";
+		}
+		if(count ==2){
+			document.getElementById('bgbody').src = "image/book7.jpg";
+		}
+		if(count ==3){
+			document.getElementById('bgbody').src = "image/book9.jpg";
+			count=0;
+		}
+		count+=1;
+		setTimeout(carusil,3000);
+	}
+</script>
